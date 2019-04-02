@@ -38,13 +38,13 @@ public class DataLoader implements ApplicationRunner {
         Folder screenGrabs = new Folder("Screen_Grabs", user);
         folderRepository.save(screenGrabs);
 
-        File curriculumVitae = new File("CV_draft", "doc", 65.7, CV);
+        File curriculumVitae = new File("CV_draft", ".doc", 65.7, CV);
         fileRepository.save(curriculumVitae);
 
-        File sunnyDay = new File("Sunny_Day", "jpg", 220.87, screenGrabs);
+        File sunnyDay = new File("Sunny_Day", ".jpg", 220.87, screenGrabs);
         fileRepository.save(sunnyDay);
 
-        File holiday = new File("Holiday_Photo", "png", 520.43, screenGrabs);
+        File holiday = new File("Holiday_Photo", ".png", 520.43, screenGrabs);
         fileRepository.save(holiday);
 
     }
